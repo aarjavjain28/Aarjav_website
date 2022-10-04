@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<title>Example</title>
+<head>
+  <title>Hello</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    margin: 0;
+  }
+  body {
+  }
+  h1 {
+    text-align: center;
+  }
+  div.col-1 {
+    background-color: "white";
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  @media screen and (max-width: 600px) {
+    div.col-1 {
+      display: none;
+    }
+  }
+
+  .col-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    background-color: lightblue;
+    padding-left: 10px;
+  }
+
+  .banner {
+    color: white;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: DodgerBlue;
+    width: 100%;
+  }
+
+  .flex-buttons {
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    display: flex;
+    flex: 1;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    color: black;
+  }
+</style>
+<body>
+  <div class="col-1">Nav</div>
+  <div class="col-2">
+    <div class="banner">
+      <div class="flex-container">
+        <div class="flex-buttons">Home</div>
+        <div class="flex-buttons">News</div>
+        <div class="flex-buttons">Contact</div>
+        <div class="flex-buttons">About</div>
+      </div>
+    </div>
+    <h1>Welcome to Aarjav's page</h1>
+    <div class="flex-container">
+      <div class="col-2">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti vel
+        aliquam neque porro? Omnis, nesciunt sapiente? Voluptatibus illo commodi
+        animi ad odio quas, tempore magni earum, nulla, dicta laborum
+        necessitatibus.
+      </div>
+      <div class="col-2">
+        <img src="selfPhoto.jpg" width="100%" />
+      </div>
+    </div>
+    <footer>Footer</footer>
+  </div>
+  <div class="col-1">Right</div>
+</body>
