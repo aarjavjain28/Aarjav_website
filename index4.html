@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .flexbox-container {
+        display: flex;
+        flex-direction: row;
+      }
+      .flexbox-item {
+        width: 200px;
+        margin: 10px;
+        border: 3px solid #333;
+        background-color: #dfdfdf;
+        flex-wrap: wrap;
+      }
+      .flexbox-item-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100px;
+        flex: 1;
+      }
+      .flexbox-item-2 {
+        min-height: 100px;
+        flex: 2;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .flexbox-item-3 {
+        min-height: 100px;
+        flex: 1;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .outer-box {
+        flex-direction: column;
+      }
+      .main-box {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: start;
+      }
+      .main-text {
+        flex: 1;
+        margin: 10px;
+        align-items: flex-start;
+        justify-content: start;
+      }
+      .main-photos {
+        flex: 1;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+      }
+      .main-photos mainphoto1 {
+        flex: 1;
+      }
+      .footer1 {
+        align-content: flex-end;
+        justify-content: start;
+      }
+      .footer2 {
+        align-content: flex-end;
+        justify-content: end;
+        padding-right: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      alert("Hello, world!");
+    </script>
+
+    <div class="flexbox-container outer-box">
+      <div class="flexbox-container">
+        <div class="flexbox-item flexbox-item-1">
+          <a href="home.html"><h2>Home</h2></a>
+        </div>
+        <div class="flexbox-item flexbox-item-1">
+          <a href="contact.html"><h2>Contact</h2></a>
+        </div>
+        <div class="flexbox-item flexbox-item-3">
+          <a href="interests.html"><h2>My Interests</h2></a>
+        </div>
+      </div>
+      <div class="flexbox-container">
+        <div class="flexbox-item flexbox-item-1 main-box">
+          <div class="main-text">
+            <h2>Welcome to Aarjav's page</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
+              quaerat mollitia. Quas consequuntur dolore accusantium ducimus
+              rem, quia labore illum fuga hic magnam voluptate dicta soluta
+              possimus distinctio expedita consectetur? Lorem ipsum dolor sit
+              amet consectetur adipisicing elit. Quos hic quas eius esse
+              repudiandae vero ratione velit vel, aspernatur autem eaque
+              quibusdam laborum expedita quo, asperiores, architecto quidem.
+              Eveniet, nemo. Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Doloremque
+            </p>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
+              quaerat mollitia. Quas consequuntur dolore accusantium ducimus
+              rem, quia labore illum fuga hic magnam voluptate dicta soluta
+              possimus distinctio expedita consectetur? Lorem ipsum dolor sit
+              amet consectetur adipisicing elit. Quos hic quas eius esse
+              repudiandae vero ratione velit vel, aspernatur autem eaque
+              quibusdam laborum expedita quo, asperiores, architecto quidem.
+              Eveniet, nemo. Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Doloremque
+            </p>
+          </div>
+          <div class="main-photos">
+            <div class="main-photos mainphoto1">
+              <img src="selfPhoto.jpg" width="100%" height="auto" />
+            </div>
+            <div class="main-photos mainphoto1">
+              <img src="frog.jpeg" width="100%" height="auto" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flexbox-container">
+        <div class="flexbox-item flexbox-item-1 footer1">
+          <div class="list1">
+            <ul>
+              <li>
+                <a href="home.html"><h4>link1</h4></a>
+              </li>
+              <li>
+                <a href="home.html"><h4>link2</h4></a>
+              </li>
+              <li>
+                <a href="home.html"><h4>link3</h4></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="flexbox-item flexbox-item-1 footer2">
+          <div class="list1">
+            <ul>
+              <li>
+                <a href="home.html"><h4>address1</h4></a>
+              </li>
+              <li>
+                <a href="home.html"><h4>address2</h4></a>
+              </li>
+              <li>
+                <a href="home.html"><h4>address3</h4></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
